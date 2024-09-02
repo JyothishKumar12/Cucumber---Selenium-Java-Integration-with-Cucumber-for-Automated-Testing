@@ -1,10 +1,19 @@
 package testRunner;
 
-public class Runner {
+import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+@CucumberOptions(
+		features = {"src/test/java/features/login.feature"},
+		dryRun = true,
+		glue="steps",
+		snippets = SnippetType.CAMELCASE,
+		monochrome = true
+		)
 
-	}
+public class Runner extends AbstractTestNGCucumberTests{
+
+	
 
 }
