@@ -5,7 +5,7 @@ import cucumber.api.SnippetType;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-		features = {"src/test/java/features/login.feature"},
+		features = {"src/test/java/features/addToCart.feature"},
 		dryRun = true,
 		glue="steps",
 		snippets = SnippetType.CAMELCASE,
